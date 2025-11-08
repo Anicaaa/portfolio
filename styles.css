@@ -7,14 +7,6 @@ section {
     background-color: white;
 }
 
-.active {
-    background-color: #1c1d25;
-}
-
-.active ul li a {
-    color: white;
-}
-
 .hero {
     background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
     background-size: cover;
@@ -68,15 +60,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px;
-    gap: 30px;
+    padding: 40px;
+    gap: 60px;
 }
 
 .sub-section-alternative {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 60px;
+    padding: 30px;
 }
 
 .headshot {
@@ -140,102 +132,47 @@ hr {
     color: #ef744b;
 }
 
-.contact-me {
-    background-color: #1c1d25;
-    color: white;
+.more-projects {
     text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold
+}
+
+.footer {
+    background-color: #1c1d25;
     padding: 50px;
 }
 
-.btn {
-    border: none;
-    text-decoration: none;
-    background-color: #ef744b;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 25px;
-    color: white;
-}
-
-.btn:hover {
-    opacity: 0.8;
-}
-
-form {
-    margin: 0 auto;
-    width: 25%;
-}
-
-form input,
-form textarea {
-    width: 80%;
-    border: 0;
-    outline: none;
-    padding: 15px;
-    margin: 15px 0;
-    color: black;
-    font-size: 18px;
-    border-radius: 6px;
-}
-
-form .btn {
-    padding: 15px 35px;
-    font-size: 20px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.msg {
-    color: #61b752;
-    margin-top: 25px;
-    display: block;
-    font-size: 20px;
-}
-
-
 @media only screen and (max-width: 1000px) {
-    .active {
-        background-color: #1c1d25;
-    }
-
-    .active ul li a {
-        color: white;
-    }
-
-    form .btn {
-        padding: 10px 10px;
-        font-size: 15px;
-        margin-top: 20px;
-        margin-left: 10px;
-        cursor: pointer;
-    }
-
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .sub-section {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .information {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .info-text,
     .info-text2 {
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    
+
     .hero-text {
         display: flex;
         flex-direction: column;
         padding-top: 250px;
+    }
+
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
