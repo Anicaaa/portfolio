@@ -31,7 +31,7 @@ p {
 }
 
 .subtext {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
     padding-top: 20px;
 }
@@ -69,7 +69,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    padding: 70px;
 }
 
 .headshot {
@@ -112,18 +112,18 @@ p {
 
 .project-card {
     padding: 30px;
-    width: 300px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
 }
 
 .project-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 
 .project-image {
-    margin: 20px;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -191,7 +191,6 @@ hr {
 @media (max-width: 768px) {
     .sub-section {
         flex-direction: column;
-        /* stack image and text vertically */
         text-align: center;
         padding: 20px;
         gap: 20px;
@@ -199,7 +198,6 @@ hr {
 
     .headshot {
         width: 250px;
-        /* smaller image on mobile */
     }
 
     .information {
