@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,7 +14,7 @@ section {
 .hero {
     background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
     background-size: cover;
-    height: 110vh;
+    min-height: 100vh;
     color: white;
     font-size: 40px;
 }
@@ -38,9 +42,10 @@ p {
 
 .hero-area {
     display: flex;
-    height: 130vh;
+    min-height: 100vh;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
 }
 
 .hero-text {
@@ -76,7 +81,6 @@ p {
     width: 400px;
     border-radius: 50%;
     max-width: 90%;
-    /* responsive */
     height: auto;
 }
 
@@ -124,14 +128,14 @@ p {
 }
 
 .project-image {
-    width: 200px;
+    width: 300px;
     height: 200px;
     object-fit: cover;
 }
 
 hr {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px auto;
+    width: 90%;
 }
 
 .project-link {
@@ -176,7 +180,6 @@ hr {
     .hero-text {
         display: flex;
         flex-direction: column;
-        padding-top: 250px;
     }
 
     .project-container {
@@ -202,5 +205,26 @@ hr {
 
     .information {
         margin-top: 1rem;
+    }
+    .hero-area {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    
+    .hero-text {
+        margin: 0;
+    }
+    
+    .socials {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social {
+        margin: 10px;
     }
 }
